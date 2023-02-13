@@ -20,6 +20,10 @@ import { ParamedicalComponent } from './paramedical/paramedical.component';
     SharedModule,
     HomeModule,
     RouterModule.forChild(CourseRoutes)
+  ],
+  exports:[
+    ScienceComponent,
+    ParamedicalComponent
   ]
 })
 export class CourseModule { }

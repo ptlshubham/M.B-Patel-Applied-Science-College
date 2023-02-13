@@ -5,6 +5,8 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { DepartmentRoutes } from './department.routing';
+import { NgbModule, NgbPaginationNext } from '@ng-bootstrap/ng-bootstrap';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 
@@ -16,6 +18,8 @@ import { DepartmentRoutes } from './department.routing';
   imports: [
     CommonModule,
     SharedModule,
+    NgbModule,
+    NgxPaginationModule,
     RouterModule.forChild(DepartmentRoutes)
   ]
 })

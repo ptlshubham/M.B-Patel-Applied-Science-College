@@ -10,6 +10,7 @@ import { BasicRoutes } from './basic.routing';
 import { HomeModule } from '../home/home.module';
 import { InfrastructureComponent } from './infrastructure/infrastructure.component';
 import { ActivityComponent } from './activity/activity.component';
+import { MoreModule } from '../more/more.module';
 
 
 
@@ -26,7 +27,7 @@ import { ActivityComponent } from './activity/activity.component';
     CommonModule,
     SharedModule,
     RouterModule.forChild(BasicRoutes),
-    HomeModule
+    HomeModule,
 
   ]
 })
