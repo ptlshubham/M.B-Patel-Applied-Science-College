@@ -148,19 +148,19 @@
                                 </li>
         
                                 <li class="menu-item lm">
-                                    <a href="http://www.cesociety.in/dnpg/Centenary.aspx">Centenary Celebration</a>
+                                    <a href="http://www.cesociety.in/#/celebration " target="_blank">Centenary Celebration</a>
                                 </li>
                                 |
                                 <li class="menu-item lm">
-                                    <a (click)="openPopup3()">News</a>
+                                    <a routerLink="/more/news" routerLinkActive="active" target="_blank">News</a>
                                 </li>
                                 |
                                 <li class="menu-item lm">
-                                    <a (click)="openPopup4()">Birthday</a>
+                                    <a (click)="open(content)" target="_blank">Birthday</a>
                                 </li>
                                 |
                                 <li class="menu-item lm">
-                                    <a href="http://www.cesociety.in/Campus-Counselling-Program.aspx">Free counseling</a>
+                                    <a href="http://www.cesociety.in/#/counselling" target="_blank">Free counseling</a>
                                 </li>
                             </ul>
 
@@ -203,7 +203,7 @@
                         <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">Course</a>
                         <ul class="dropdown-menu">
-                            <li><a (click)="openPopup()">Syllabus</a> </li>
+                            <li><a  >Syllabus</a> </li>
                             <li><a href="http://www.cesociety.in/mbpatelscience/images/news/Program_Outcomes.pdf"
                                     target="_blank">Course Outcomes</a> </li>
                         </ul>
@@ -284,7 +284,6 @@
                                         <li>
                                             <a routerLink="/basic/about" routerLinkActive="active">About Us</a>
                                         </li>
-
                                         <li class="menu-item-has-children">
                                             <a href="#">Gallery/Media</a>
                                             <ul class="sub-menu">
@@ -292,10 +291,11 @@
                                                 <li><a href="#">Videos</a> </li>
                                             </ul>
                                         </li>
+                                        
                                         <li class="menu-item-has-children">
                                             <a href="">Course</a>
                                             <ul class="sub-menu">
-                                                <li><a (click)="openPopup()">Syllabus</a> </li>
+                                                <li><a  >Syllabus</a> </li>
                                                 <li><a href="http://www.cesociety.in/mbpatelscience/images/news/Program_Outcomes.pdf"
                                                         target="_blank">Course Outcomes</a> </li>
                                             </ul>
@@ -333,9 +333,9 @@
                                                                                 target="_blank">RAR</a></li>
                                                                     </ul>
                                                                 </li>
-                                                                <li><a (click)="openPopup1()">IQAC and AQAR Reports</a>
+                                                                <li><a >IQAC and AQAR Reports</a>
                                                                 </li>
-                                                                <li><a (click)="openPopup2()">NAAC Certificates</a>
+                                                                <li><a  >NAAC Certificates</a>
                                                                 </li>
                                                                 <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/CPE_KEY_DOCUMENTS.pdf"
                                                                         target="_blank">CPE Key documents</a> </li>
@@ -367,9 +367,9 @@
                                                                 <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/College_Committee_list_2018.pdf"
                                                                         target="_blank">College Committee Lists</a>
                                                                 </li>
-                                                                <li><a (click)="openPopup4()">Academic Calenders</a>
+                                                                <li><a  >Academic Calenders</a>
                                                                 </li>
-                                                                <li><a (click)="openPopup5()">NAAC Criteria</a> </li>
+                                                                <li><a  >NAAC Criteria</a> </li>
                                                                 <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Feedback.pdf"
                                                                         target="_blank">Sample Feedback</a> </li>
                                                             </div>
@@ -440,7 +440,7 @@
                                                                 target="_blank">Achievements</a>
                                                         </li>
                                                         <li class="menu-item-has-children current-menu-item">
-                                                            <a (click)="openPopup3()">Timetable Sem 1 to 6</a>
+                                                            <a  >Timetable Sem 1 to 6</a>
                                                         </li>
                                                         <li class="menu-item-has-children current-menu-item">
                                                             <a href="http://www.cesociety.in/(S(vtswlubhzsfadhtt140d5u5t))/mbpatelscience/images/news/UG%20Adm%20Schedule%20Circular.pdf"
@@ -519,7 +519,7 @@
                                             <li class="menu-item-has-children">
                                                 <a href="">Course</a>
                                                 <ul class="sub-menu">
-                                                    <li><a (click)="openPopup()">Syllabus</a> </li>
+                                                    <li><a  >Syllabus</a> </li>
                                                     <li><a href="http://www.cesociety.in/mbpatelscience/images/news/Program_Outcomes.pdf"
                                                             target="_blank">Course Outcomes</a> </li>
                                                 </ul>
@@ -557,10 +557,10 @@
                                                                                     target="_blank">RAR</a></li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li><a (click)="openPopup1()">IQAC and AQAR
+                                                                    <li><a >IQAC and AQAR
                                                                             Reports</a>
                                                                     </li>
-                                                                    <li><a (click)="openPopup2()">NAAC Certificates</a>
+                                                                    <li><a  >NAAC Certificates</a>
                                                                     </li>
                                                                     <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/CPE_KEY_DOCUMENTS.pdf"
                                                                             target="_blank">CPE Key documents</a> </li>
@@ -592,9 +592,9 @@
                                                                     <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/College_Committee_list_2018.pdf"
                                                                             target="_blank">College Committee Lists</a>
                                                                     </li>
-                                                                    <li><a (click)="openPopup4()">Academic Calenders</a>
+                                                                    <li><a  >Academic Calenders</a>
                                                                     </li>
-                                                                    <li><a (click)="openPopup5()">NAAC Criteria</a>
+                                                                    <li><a  >NAAC Criteria</a>
                                                                     </li>
                                                                     <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Feedback.pdf"
                                                                             target="_blank">Sample Feedback</a> </li>
@@ -667,7 +667,7 @@
                                                                     target="_blank">Achievements</a>
                                                             </li>
                                                             <li class="menu-item-has-children current-menu-item">
-                                                                <a (click)="openPopup3()">Timetable Sem 1 to 6</a>
+                                                                <a  >Timetable Sem 1 to 6</a>
                                                             </li>
                                                             <li class="menu-item-has-children current-menu-item">
                                                                 <a href="http://www.cesociety.in/(S(vtswlubhzsfadhtt140d5u5t))/mbpatelscience/images/news/UG%20Adm%20Schedule%20Circular.pdf"
@@ -713,733 +713,68 @@
 
             <!-- stickymenu -->
         </div>
-
-        <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Syllabus</h4>
-                    </div>
-                    <div class="modal-body">
-                        <!-- <p>Our Syllabus is as prescribed by Gujarat Secondary & Higher Secondary Education
-                                        Board - Gandhinagar for Std 9, 10 and 11, 12 Science, Commerce And Arts.</p> -->
-                        <div class="row">
-                            <div class="col-md-6">
-                                <table>
-                                    <tr>
-                                        <th>Syllabus Name</th>
-                                        <th>Syllabus Description</th>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Detail%20for%20Skills%20Enhancement%20BSc%20%20Sem%203.pdf"
-                                                target="_blank">Skills Enhancement</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Detail%20for%20Skills%20Enhancement%20BSc%20%20Sem%203.pdf"
-                                                target="_blank">SEM- 3</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Ind%20Chem)%20Sem%203.pdf"
-                                                target="_blank">Industrial Chemistry</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Ind%20Chem)%20Sem%203.pdf"
-                                                target="_blank">SEM- 3</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/US02SENV21%20Environmental%20Studies.pdf"
-                                                target="_blank">Environmental Studies</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/US02SENV21%20Environmental%20Studies.pdf"
-                                                target="_blank">SEM- 2</a> </td>
-                                    </tr>       
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/US02CICV21%20Process%20Calculations%20&%20Mechanical%20Operations.pdf"
-                                                target="_blank">Industrial Chemistry</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/US02CICV21%20Process%20Calculations%20&%20Mechanical%20Operations.pdf"
-                                                target="_blank">SEM- 2</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Microbiology)%20Sem%203.pdf"
-                                                target="_blank">MicroBiology</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Microbiology)%20Sem%203.pdf"
-                                                target="_blank">SEM- 3</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/sem-%204%20MICROBIO.pdf"
-                                                target="_blank">MicroBiology</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/sem-%204%20MICROBIO.pdf"
-                                                target="_blank">SEM- 4</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem%20-%205%20Microbio.pdf"
-                                                target="_blank">MicroBiology</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem%20-%205%20Microbio.pdf"
-                                                target="_blank">SEM- 5</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-6%20Microbio.pdf"
-                                                target="_blank">MicroBiology</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-6%20Microbio.pdf"
-                                                target="_blank">SEM- 6</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-%201%20Chem.pdf"
-                                                target="_blank">Chemistry</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-%201%20Chem.pdf"
-                                                target="_blank">SEM- 1</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/US02CCHE21%20General%20Chemistry%20-%20II.pdf"
-                                                target="_blank">Chemistry</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/US02CCHE21%20General%20Chemistry%20-%20II.pdf"
-                                                target="_blank">SEM- 2</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Chemistry)%20Sem%203.pdf"
-                                                target="_blank">Chemistry</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Chemistry)%20Sem%203.pdf"
-                                                target="_blank">SEM- 3</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-4%20Chem.pdf"
-                                                target="_blank">Chemistry</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-4%20Chem.pdf"
-                                                target="_blank">SEM- 4</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Chemistry%20Sem-5.pdf"
-                                                target="_blank">Chemistry</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Chemistry%20Sem-5.pdf"
-                                                target="_blank">SEM- 5</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Chemistry%20Sem-%206.pdf"
-                                                target="_blank">Chemistry</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Chemistry%20Sem-%206.pdf"
-                                                target="_blank">SEM- 6</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Statistics)%20Sem%203.pdf"
-                                                target="_blank">Statistics</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Statistics)%20Sem%203.pdf"
-                                                target="_blank">SEM- 3</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/sem-4stat.pdf"
-                                                target="_blank">Statistics</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/sem-4stat.pdf"
-                                                target="_blank">SEM- 4</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/sem-1phy.pdf"
-                                                target="_blank">Physics</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/sem-1phy.pdf"
-                                                target="_blank">SEM- 1</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/US02CPHY21%20Mechanics-II%20Basic%20Electronics%20and%20LASER.pdf"
-                                                target="_blank">Physics</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/US02CPHY21%20Mechanics-II%20Basic%20Electronics%20and%20LASER.pdf"
-                                                target="_blank">SEM- 2</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Physics)%20Sem%203.pdf"
-                                                target="_blank">Physics</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Physics)%20Sem%203.pdf"
-                                                target="_blank">SEM- 3</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Syllabus%20of%20B%20Sc%20Physics%20Semester4.pdf"
-                                                target="_blank">Physics</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Syllabus%20of%20B%20Sc%20Physics%20Semester4.pdf"
-                                                target="_blank">SEM- 4</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Syllabus%20of%20B%20Sc%20Physics%20Semester5.pdf"
-                                                target="_blank">Physics</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Syllabus%20of%20B%20Sc%20Physics%20Semester5.pdf"
-                                                target="_blank">SEM- 5</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Syllabus%20of%20B%20Sc%20Physics%20Semester6.pdf"
-                                                target="_blank">Physics</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Syllabus%20of%20B%20Sc%20Physics%20Semester6.pdf"
-                                                target="_blank">SEM- 6</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/sem-1%20math.pdf"
-                                                target="_blank">Mathematics</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/sem-1%20math.pdf"
-                                                target="_blank">SEM- 1</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/US02CMTH21%20Algebra.pdf"
-                                                target="_blank">Mathematics</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/US02CMTH21%20Algebra.pdf"
-                                                target="_blank">SEM- 2</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/sem-3math.pdf"
-                                                target="_blank">Mathematics</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/sem-3math.pdf"
-                                                target="_blank">SEM- 3</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/sem-4math.pdf"
-                                                target="_blank">Mathematics</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/sem-4math.pdf"
-                                                target="_blank">SEM- 4</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-5math.pdf"
-                                                target="_blank">Mathematics</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-5math.pdf"
-                                                target="_blank">SEM- 5</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/sem-6%20math.pdf"
-                                                target="_blank">Mathematics</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/sem-6%20math.pdf"
-                                                target="_blank">SEM- 6</a> </td>
-                                    </tr>
-
-                                </table>
-                            </div>
-                            <div class="col-md-6">
-                                <table>
-                                    <tr>
-                                        <th>Syllabus Name</th>
-                                        <th>Syllabus Description</th>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-1eng.pdf"
-                                                target="_blank">English</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-1eng.pdf"
-                                                target="_blank">SEM- 1</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/US02AENG21%20Functional%20English.pdf"
-                                                target="_blank">English</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/US02AENG21%20Functional%20English.pdf"
-                                                target="_blank">SEM- 2</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20Sem%203%20Functional%20English.pdf"
-                                                target="_blank">English</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20Sem%203%20Functional%20English.pdf"
-                                                target="_blank">SEM- 3</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="#" target="_blank">English</a> </td>
-                                        <td> <a href="#" target="_blank">SEM- 4</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Electronics)%20Sem%203.pdf"
-                                                target="_blank">Electronics</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Electronics)%20Sem%203.pdf"
-                                                target="_blank">SEM- 3</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-4ele.pdf"
-                                                target="_blank">Electronics</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-4ele.pdf"
-                                                target="_blank">SEM- 4</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-5ele.pdf"
-                                                target="_blank">Electronics</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-5ele.pdf"
-                                                target="_blank">SEM- 5</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-6_ele.pdf"
-                                                target="_blank">Electronics</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-6_ele.pdf"
-                                                target="_blank">SEM- 6</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Computer%20Science)%20Sem%203.pdf"
-                                                target="_blank">Computer Science</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Computer%20Science)%20Sem%203.pdf"
-                                                target="_blank">SEM- 3</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/SEM-4cs.pdf"
-                                                target="_blank">Computer Science</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/SEM-4cs.pdf"
-                                                target="_blank">SEM- 4</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/SEM-5cs.pdf"
-                                                target="_blank">Computer Science</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/SEM-5cs.pdf"
-                                                target="_blank">SEM- 5</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/SEM-6_CS.pdf"
-                                                target="_blank">Computer Science</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/SEM-6_CS.pdf"
-                                                target="_blank">SEM- 6</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Biotechnology)%20Sem%203.pdf"
-                                                target="_blank">Bio Technology</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Biotechnology)%20Sem%203.pdf"
-                                                target="_blank">SEM- 3</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-4%20BT.pdf"
-                                                target="_blank">Bio Technology</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-4%20BT.pdf"
-                                                target="_blank">SEM- 4</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-5_BT.pdf"
-                                                target="_blank">Bio Technology</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-5_BT.pdf"
-                                                target="_blank">SEM- 5</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-6%20BT.pdf"
-                                                target="_blank">Bio Technology</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-6%20BT.pdf"
-                                                target="_blank">SEM- 6</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-1_bio.pdf"
-                                                target="_blank">Biology</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-1_bio.pdf"
-                                                target="_blank">SEM- 1</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/US02CBIO21%20Genetics,%20Tissue%20Culture%20and%20General%20Biology.pdf"
-                                                target="_blank">Biology</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/US02CBIO21%20Genetics,%20Tissue%20Culture%20and%20General%20Biology.pdf"
-                                                target="_blank">SEM- 2</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Biology)%20Sem%203.pdf"
-                                                target="_blank">Biology</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Biology)%20Sem%203.pdf"
-                                                target="_blank">SEM- 3</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-4_bio.pdf"
-                                                target="_blank">Biology</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-4_bio.pdf"
-                                                target="_blank">SEM- 4</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-5_.pdf"
-                                                target="_blank">Biology</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-5_.pdf"
-                                                target="_blank">SEM- 5</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-6%20Bio.pdf"
-                                                target="_blank">Biology</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-6%20Bio.pdf"
-                                                target="_blank">SEM- 6</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Biochemistry)%20Sem%203.pdf"
-                                                target="_blank">Biochemistry</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/BSc%20(Biochemistry)%20Sem%203.pdf"
-                                                target="_blank">SEM- 3</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/sem-%204.pdf"
-                                                target="_blank">Biochemistry</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/sem-%204.pdf"
-                                                target="_blank">SEM- 4</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-5.pdf"
-                                                target="_blank">Biochemistry</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-5.pdf"
-                                                target="_blank">SEM- 5</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-6.pdf"
-                                                target="_blank">Biochemistry</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Sem-6.pdf"
-                                                target="_blank">SEM- 6</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Syllabus%20of%20CMLT.pdf"
-                                                target="_blank">CMLT</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Syllabus%20of%20CMLT.pdf"
-                                                target="_blank">CMLT</a> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Diploma%20in%20Med.%20Lab.Technology%20(DMLT_.PG)%20(1).pdf"
-                                                target="_blank">DMLT</a> </td>
-                                        <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/Diploma%20in%20Med.%20Lab.Technology%20(DMLT_.PG)%20(1).pdf"
-                                                target="_blank">DMLT</a> </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
+   
+<!-- stickymenu -->
+<ng-template #content let-c="close" let-d="dismiss">
+        <div class="modal-header">
+            <div class="icon-part" style="margin: 10px 20px 10px 20px !important;">
+                <img src="assets/images/cake.png" alt="">
+            </div>
+            <h4 class="modal-title" id="modal-basic-title" style="text-align: center;">Wish List of the Day !
+            </h4>
+            <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+        </div>
+        <div class="modal-body">
+            <div classs="row">
+                <p style="text-align: center; color: #ffcc00;" *ngIf="staffDataTable.length==0"><strong>
+                        There are no wishes to be made today!
+                    </strong></p>
+            </div>
 
 
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" (click)="closePopup()">
-                            Close
-                        </button>
-                    </div>
+            <div class="row" *ngFor="let s of staffDataTable;let i=index">
+                <div class="col-1">
+                    <p style="text-align: center;"><strong>{{i+1}}</strong></p>
                 </div>
+                <div class="col-2">
+                    <img src="http://localhost:9000{{s.profile_image}}" class="img-thumbnail"
+                        alt="wedrfgthyuj" />
+                </div>
+                <div class="col-5">
+                    <p>
+                        <strong>
+                            {{s.name}} <br>
+                            {{s.instituteName}},<br>
+                            {{s.departmentName}},<br>
+                            {{s.designation}},<br>
+                        </strong>
+                    </p>
+                </div>
+                <div class="col-4">
+                    <ul class="address-widget">
+                        <li class="mt-3">
+                            <div class="desc">
+                                <i class="flaticon-call" style="color: black;"></i> <a
+                                    href="tel:{{s.contact}}">{{s.contact}}</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="desc">
+                                <i class="flaticon-email" style="color: black;"></i> <a
+                                    href="mailto:{{s.email}}">
+                                    {{s.email}}</a> <br>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <hr *ngIf="staffDataTable.length>1">
             </div>
         </div>
-        <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle1}">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">IQAC and AQAR Reports</h4>
-                    </div>
-                    <div class="modal-body">
-                        <ul style="list-style-type:decimal;">
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/NAAC%202017-2018.pdf"
-                                    target="_blank">AQAR 2017-2018</a> </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/IQAR_2017-2018.pdf"
-                                    target="_blank">IQAR 2017-2018</a> </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/AQAR_2016_2017.pdf"
-                                    target="_blank">AQAR 2016-2017</a>
-                            </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/IQAR_2016_2017.pdf"
-                                    target="_blank">IQAR 2016-2017</a> </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/AQAR_2015_2016.pdf"
-                                    target="_blank">AQAR 2015-2016</a> </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/IQAR_2015_2016.pdf"
-                                    target="_blank">IQAR 2015-2016</a>
-                            </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/AQAR_2014_2015.pdf"
-                                    target="_blank">AQAR 2014-2015</a></li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/IQAR_2014_2015.pdf"
-                                    target="_blank">IQAR 2014-2015</a></li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/AQAR_2013_2014.pdf"
-                                    target="_blank">AQAR 2013-2014</a></li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/IQAR_2013_2014.pdf"
-                                    target="_blank">IQAR 2013-2014</a></li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/NAAC_2011_2012-.pdf"
-                                    target="_blank">AQAR and IQAC 2011-2012</a></li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/NAAC_2010_2011-.pdf"
-                                    target="_blank">AQAR and IQAC 2010-2011</a></li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/NAAC_2009_2010.pdf"
-                                    target="_blank">AQAR and IQAC 2009-2010</a></li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/NAAC%202008-2009-.pdf"
-                                    target="_blank">AQAR and IQAC 2008-2009</a></li>
-                        </ul>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" (click)="closePopup()">
-                            Close
-                        </button>
-                    </div>
-                </div>
-            </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">
+                <i class="fa fa-times" aria-hidden="true"></i> Close</button>
         </div>
-        <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle2}">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">NAAC Certificates</h4>
-                    </div>
-                    <div class="modal-body">
-                        <ul style="list-style-type:decimal;">
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Quality_Profile_2013.pdf"
-                                    target="_blank">Quality Profile 2013</a> </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Certificate_of_Accreditation_2013.pdf"
-                                    target="_blank">Certificate of Accreditation 2013</a> </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Quality_Profile_2008.pdf"
-                                    target="_blank">Quality Profile 2008</a> </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Certificate_of_Accreditation_2008.pdf"
-                                    target="_blank">Certificate of Accreditation 2008</a> </li>
-
-                        </ul>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" (click)="closePopup()">
-                            Close
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle3}">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">TIMETABLE SEM 1 TO 6</h4>
-                    </div>
-                    <div class="modal-body">
-                        <ul style="list-style-type:decimal;">
-                            <li><a href="http://www.cesociety.in/mbpatelscience/images/news/1st%20sem.pdf"
-                                    target="_blank">F. Y. B. Sc Sem-1 Timetable</a> </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/images/news/S.%20Y.%20B.Sc%20Sem-3%20Timetable.pdf"
-                                    target="_blank">S. Y. B. Sc Sem-3 Timetable</a> </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/images/news/4th%20sem.pdf"
-                                    target="_blank">S. Y. B. Sc Sem-4 Timetable</a> </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/images/news/T.%20Y.%20B.%20Sc%20Sem-5%20Timetable.pdf"
-                                    target="_blank">T. Y. B. Sc Sem-5 Timetable</a> </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/images/news/6th%20sem.pdf"
-                                    target="_blank">T. Y. B. Sc Sem-6 Timetable</a> </li>
-
-                        </ul>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" (click)="closePopup()">
-                            Close
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle4}">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Academic Calenders</h4>
-                    </div>
-                    <div class="modal-body">
-                        <ul style="list-style-type:decimal;">
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/university%20academic%20calendar.pdf"
-                                    target="_blank">University Academic Calendar</a> </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Academic%20calendar%2021-22.pdf"
-                                    target="_blank">Academic Calender 2021-2022</a> </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2019-2020.pdf"
-                                    target="_blank">Academic Calender 2019-2020</a> </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2018-2019.pdf"
-                                    target="_blank">Academic Calender 2018-2019</a> </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Academic_Calender_2017_2018.pdf"
-                                    target="_blank">Academic Calender 2017-2018</a> </li>
-                            <li><a href="cesociety.in/mbpatelscience/IQAC/Academic_Calender_2016_2017.pdf"
-                                    target="_blank">Academic Calender 2016-2017</a> </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Academic_Calender_2015_2016.pdf"
-                                    target="_blank">Academic Calender 2015-2016</a> </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Academic_Calender_2014_2015.pdf"
-                                    target="_blank">Academic Calender 2014-2015</a> </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Academic_Calender_2013_2014.pdf"
-                                    target="_blank">Academic Calender 2013-2014</a> </li>
-                        </ul>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" (click)="closePopup()">
-                            Close
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle5}">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">NAAC Criteria</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul style="list-style-type:decimal;">
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/1_1_3.pdf"
-                                            target="_blank">Criteria-11_1_3</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/1_2_1.pdf"
-                                            target="_blank">Criteria-1 1_2_1</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/1_2_2.pdf"
-                                            target="_blank">Criteria-1 1_2_2</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/1_3_1.pdf"
-                                            target="_blank">Criteria-1 1_3_1</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/1_3_2.pdf"
-                                            target="_blank">Criteria-1 1_3_2</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/1_3_3.pdf"
-                                            target="_blank">Criteria-1 1_3_3</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/1_4_1.pdf"
-                                            target="_blank">Criteria-1 1_4_1</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/1_4_2.pdf"
-                                            target="_blank">Criteria-1 1_4_2</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2_1_1.pdf"
-                                            target="_blank">Criteria-2 2_1_1</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2_2_3.pdf"
-                                            target="_blank">Criteria-2 2_2_3</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2_3_2.pdf"
-                                            target="_blank">Criteria-2 2_3_2</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2_4_1.pdf"
-                                            target="_blank">Criteria-2 2_4_1</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2_4_4.pdf"
-                                            target="_blank">Criteria-2 2_4_4</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2_4_5.pdf"
-                                            target="_blank">Criteria-2 2_4_5</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2_6_1.pdf"
-                                            target="_blank">Criteria-2 2_6_1</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_1_1.pdf"
-                                            target="_blank">Criteria-3 3_1_1</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_1_2.pdf"
-                                            target="_blank">Criteria-3 3_1_2</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_1_3.pdf"
-                                            target="_blank">Criteria-3 3_1_3</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_3_3.pdf"
-                                            target="_blank">Criteria-3 3_3_3</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_4_1.pdf"
-                                            target="_blank">Criteria-3 3_4_1</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_4_2.pdf"
-                                            target="_blank">Criteria-3 3_4_2</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_4_3.pdf"
-                                            target="_blank">Criteria-3 3_4_3</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_4_4.pdf"
-                                            target="_blank">Criteria-3 3_4_4</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_5_1.pdf"
-                                            target="_blank">Criteria-3 3_5_1</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_5_2.pdf"
-                                            target="_blank">Criteria-3 3_5_2</a> </li>
-
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <ul style="list-style-type:decimal;">
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/4_1_3.pdf"
-                                            target="_blank">Criteria-4 4_1_3</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/4_1_4.pdf"
-                                            target="_blank">Criteria-4 4_1_4</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/4_2_3.pdf"
-                                            target="_blank">Criteria-4 4_2_3</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/4_2_4.pdf"
-                                            target="_blank">Criteria-4 4_2_4</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/4_2_6.pdf"
-                                            target="_blank">Criteria-4 4_2_6</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/4_3_3.pdf"
-                                            target="_blank">Criteria-4 4_3_3</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/4_4_1.pdf"
-                                            target="_blank">Criteria-4 4_4_1</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/5_1_1.pdf"
-                                            target="_blank">Criteria-5 5_1_1</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/5_1_2.pdf"
-                                            target="_blank">Criteria-5 5_1_2</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/5_1_3.pdf"
-                                            target="_blank">Criteria-5 5_1_3</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/5_1_6.pdf"
-                                            target="_blank">Criteria-5 5_1_6</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/5_3_3.pdf"
-                                            target="_blank">Criteria-5 5_3_3</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/5_4_3.pdf"
-                                            target="_blank">Criteria-5 5_4_3</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/6_2_1.pdf"
-                                            target="_blank">Criteria-6 6_2_1</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/6_2_3.pdf"
-                                            target="_blank">Criteria-6 6_2_3</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/6_3_4.pdf"
-                                            target="_blank">Criteria-6 6_3_4</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/6_4_2.pdf"
-                                            target="_blank">Criteria-6 6_4_2</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/6_5_3.pdf"
-                                            target="_blank">Criteria-6 6_5_3</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/7_1_5.pdf"
-                                            target="_blank">Criteria-7 7_1_5</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/7_1_8.pdf"
-                                            target="_blank">Criteria-7 7_1_8</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/7_1_12.pdf"
-                                            target="_blank">Criteria-7 7_1_12</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/7_1_14.pdf"
-                                            target="_blank">Criteria-7 7_1_14</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/7_1_15.pdf"
-                                            target="_blank">Criteria-7 7_1_15</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/7_1_16.pdf"
-                                            target="_blank">Criteria-7 7_1_16</a> </li>
-                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/7_1_17.pdf"
-                                            target="_blank">Criteria-7 7_1_17</a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" (click)="closePopup()">
-                            Close
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Modal: modalRelatedContent-->
-        <div class="modal right" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle6}">
-                <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
-                    <!--Content-->
-                    <div class="modal-content">
-                        <!--Header-->
-                        <div class="modal-header">
-                            <p class="heading">TODAY'S NEWS / EVENTS</p>
-    
-                            <button type="button" class="close" (click)="closePopup()">
-                                <span aria-hidden="true" class="white-text">&times;</span>
-                            </button>
-                        </div>
-    
-                        <!--Body-->
-                        <div class="modal-body">
-    
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-10">
-                                   <h5>SHRI ALPESH N. PATEL POST GRADUATE INSTITUTE OF SCIENCE AND RESEARCH, ANAND</h5>
-    
-                                    <p><strong>UNIVERSITY TOPPERS OF M.SC. MLT AND DMLT DEPARTMENT</strong></p>
-                                    <p><a href="assets/sanppgi/images/news/MLT%20Final%20RESULT%20with%20university%20rank%20%20IT%20CELL.pdf" target="_blank"> M.SC MT (CLT) & DMLT
-                                        RESULT (2020 – 22)</a></p>
-                                    <button type="button" class="btn btn-info btn-md" (click)="closePopup()">Close</button>
-                                </div>
-    
-                                <div class="col-1"></div>
-                            </div>
-                        </div>
-    
-                    </div>
-                    <!--/.Content-->
-                </div>
-            </div>
-            <!--Modal: modalRelatedContent-->
-             <!--Modal: modalRelatedContent-->
-             <div class="modal right" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle7}">
-                <div class="modal-dialog modal-left modal-bottom-right modal-notify modal-info" role="document">
-                    <!--Content-->
-                    <div class="modal-content">
-                        <!--Header-->
-                        <div class="modal-header">
-                            <p class="heading">BIRTHDAY</p>
-    
-                            <button type="button" class="close" (click)="closePopup()">
-                                <span aria-hidden="true" class="white-text">&times;</span>
-                            </button>
-                        </div>
-    
-                        <!--Body-->
-                        <div class="modal-body">
-    
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-10">
-    
-                                    <p><strong>
-                                        DR. ZARNA PATEL (Assistant Professor At Shri Alpesh N. Patel Post Graduate Institute Of Science And Research, Anand)</strong></p>
-                                    
-                                    <button type="button" class="btn btn-info btn-md" (click)="closePopup()">Close</button>
-                                </div>
-    
-                                <div class="col-1"></div>
-                            </div>
-                        </div>
-    
-                    </div>
-                    <!--/.Content-->
-                </div>
-            </div>
-            <!--Modal: modalRelatedContent-->
-        <style>
-            .modal-body {
-                padding: 2rem;
-            }
-        </style>
-
-       
-
+    </ng-template>
     </header>
 
 </div>
