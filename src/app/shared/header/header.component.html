@@ -5,7 +5,7 @@
                 <div class="row card1">
                     <a data-toggle="collapse" data-bs-parent="#accordion" data-bs-toggle="collapse" href="#collapseTwo">
                         <i class="fa fa-times-circle" style="float: right; color: white; font-size:24px"></i></a>
-                        <h6 style="color: white;text-align: center;">View Course</h6>
+                    <h6 style="color: white;text-align: center;">View Course</h6>
                     <div class="col-md-3">
                         <div class="servicesHome-box">
                             <ul>
@@ -106,7 +106,7 @@
                         <ul class="topbar-right">
                             <li class="login-register" style="font-size:12px !important;">
                                 <i class="fa fa-clock-o"></i>
-                                <a href="">Last Updated:27-june-2022</a>
+                                <a href="">Last Updated: {{siteUpdate.updatedSite|date}}</a>
                             </li>
                             <li class="login-register" style="font-size:12px !important;">
                                 <i class="fa fa-users"></i>
@@ -130,39 +130,39 @@
                 </div>
                 <div class="col-lg-5 text-start m1" style="padding-right:30px;">
 
-                        <ul class="topbar-right">
-                                <li class="menu-item lm">
-                                    <div class="wrap">
-                                        <div class="search">
-                                            <a class="card-link collapsed" data-bs-toggle="collapse"
-                                                data-bs-target="#collapseTwo" href="#" (click)="moreOpen()"
-                                                aria-expanded="true">
-                                                <input type="text" class="searchTerm" placeholder="What are you looking for?"
-                                                    style="color: #203154;">
-                                            </a>
-                                            <button type="submit" class="searchButton">
-                                                <i class="fa fa-search"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-        
-                                <li class="menu-item lm">
-                                    <a href="http://www.cesociety.in/#/celebration " target="_blank">Centenary Celebration</a>
-                                </li>
-                                |
-                                <li class="menu-item lm">
-                                    <a routerLink="/more/news" routerLinkActive="active" target="_blank">News</a>
-                                </li>
-                                |
-                                <li class="menu-item lm">
-                                    <a (click)="open(content)" target="_blank">Birthday</a>
-                                </li>
-                                |
-                                <li class="menu-item lm">
-                                    <a href="http://www.cesociety.in/#/counselling" target="_blank">Free counseling</a>
-                                </li>
-                            </ul>
+                    <ul class="topbar-right">
+                        <li class="menu-item lm">
+                            <div class="wrap">
+                                <div class="search">
+                                    <a class="card-link collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" href="#" (click)="moreOpen()"
+                                        aria-expanded="true">
+                                        <input type="text" class="searchTerm" placeholder="What are you looking for?"
+                                            style="color: #203154;">
+                                    </a>
+                                    <button type="submit" class="searchButton">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="menu-item lm">
+                            <a href="http://www.cesociety.in/#/celebration " target="_blank">Centenary Celebration</a>
+                        </li>
+                        |
+                        <li class="menu-item lm">
+                            <a routerLink="/more/news" routerLinkActive="active" target="_blank">News</a>
+                        </li>
+                        |
+                        <li class="menu-item lm">
+                            <a (click)="open(content)" target="_blank">Birthday</a>
+                        </li>
+                        |
+                        <li class="menu-item lm">
+                            <a href="http://www.cesociety.in/#/counselling" target="_blank">Free counseling</a>
+                        </li>
+                    </ul>
 
                 </div>
             </div>
@@ -184,82 +184,65 @@
                         <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false" routerLink="/home" routerLinkActive="active">Home</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item">CES Home</a> </li>
+                            <li><a class="dropdown-item" href="http://www.cesociety.in/#/home/main" target="_blank">CES
+                                    Home</a> </li>
                         </ul>
                     </li>
                     <li class="btn-group">
-                        <a class="btn btn-lg " routerLink="/basic/about" routerLinkActive="active">About Us</a>
+                        <a class="btn btn-lg" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        routerLink="/basic/about" routerLinkActive="active">About Us</a>
+
                     </li>
                     <li class="btn-group">
                         <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">Gallery/Media</a>
 
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" routerLink="/gallery/photos" routerLinkActive="active">Photos</a> </li>
-                            <li><a class="dropdown-item">Videos</a> </li>
+                            <li><a class="dropdown-item" routerLink="/gallery/photos"
+                                    routerLinkActive="active">Photos</a> </li>
+                            <li><a class="dropdown-item" routerLink="/more/magazine" routerLinkActive="active">Our
+                                    Magazine</a> </li>
                         </ul>
+                    </li>
+
+                    <li class="btn-group">
+                        <a class="btn btn-lg" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            routerLink="/basic/infrastructure" routerLinkActive="active">Infrastructure</a>
+
                     </li>
                     <li class="btn-group">
                         <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Course</a>
+                            aria-expanded="false">Department</a>
                         <ul class="dropdown-menu">
-                            <li><a  >Syllabus</a> </li>
-                            <li><a href="http://www.cesociety.in/mbpatelscience/images/news/Program_Outcomes.pdf"
-                                    target="_blank">Course Outcomes</a> </li>
+                            <li><a class="dropdown-item" routerLink="/department/staff" routerLinkActive="active">Staff
+                                    Details</a> </li>
+                            <li><a class="dropdown-item" routerLink="/department/student"
+                                    routerLinkActive="active">Student Details</a> </li>
                         </ul>
                     </li>
                     <li class="btn-group">
-                        <a class="btn btn-lg" routerLink="/basic/contact" routerLinkActive="active">Contact
-                            Us</a>
+                        <a class="btn btn-lg" routerLink="/basic/contact" routerLinkActive="active">Contact Us</a>
                     </li>
                     <li class="btn-group">
                         <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">More</a>
                         <ul class="dropdown-menu">
                             <!-- <li><a class="dropdown-item" routerLink="" routerLinkActive="active">Department</a> </li> -->
-                            <li><a class="dropdown-item" routerLink="">Results</a> </li>
-                            <li><a class="dropdown-item"
-                                    href="http://www.cesociety.in/mbpatelscience/images/Forms/MB%20Science%20College%20Prospectus%202018%20-%202019-min.pdf"
-                                    target="_blank">Prospectus</a> </li>
-                            <li><a class="dropdown-item" routerLink="">NAAC</a>
+                            <li><a class="dropdown-item" routerLink="/more/result" routerLinkActive="active">Results</a>
                             </li>
-                            <li><a class="dropdown-item" routerLink="">Student Info.</a>
+                            <li><a class="dropdown-item" routerLink="/more/news" routerLinkActive="active">News</a>
                             </li>
-                            <li>
-                                <a class="dropdown-item"
-                                    href="http://www.cesociety.in/mbpatelscience/images/news/IQAC%20Committee.pdf"
-                                    target="_blank">IQAC Committee</a>
+                            <li><a class="dropdown-item" routerLink="/basic/committee"
+                                    routerLinkActive="active">Committee</a> </li>
+                            <li><a class="dropdown-item" routerLink="" routerLinkActive="active">Student Corner</a>
                             </li>
-                            <li>
-                                <a class="dropdown-item"
-                                    href="http://www.cesociety.in/mbpatelscience/images/news/CWDC.pdf"
-                                    target="_blank">CWDC Committee</a>
-                            </li>
-                            <li class="btn-group">
-                                <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">RTI & Organogram</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item"
-                                            href="http://www.cesociety.in/mbpatelscience/images/news/RTI.pdf"
-                                            target="_blank">RTI</a> </li>
-                                    <li><a class="dropdown-item"
-                                            href="http://www.cesociety.in/mbpatelscience/images/news/NAAC_Organogram.pdf"
-                                            target="_blank">NAAC Organogram</a> </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="dropdown-item"
-                                    href="http://www.cesociety.in/mbpatelscience/images/news/Anti_Ragging.pdf"
-                                    target="_blank">Anti-Ragging</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item">Bank Details</a>
+                            <li><a class="dropdown-item" (click)="openLinks('forms')">Form</a> </li>
+                            <li><a class="dropdown-item" (click)="openLinks('report')">Reports</a>
                             </li>
                         </ul>
                     </li>
 
                 </ul>
-
             </div>
         </nav>
         <!-- MOBILEMENU -->
@@ -274,207 +257,88 @@
 
                                 <nav class="rs-menu">
                                     <ul class="nav-menu">
-                                        <li class="menu-item-has-children">
+
+                                        <li class="menu-item">
                                             <a routerLink="/home" routerLinkActive="active">Home</a>
                                             <ul class="sub-menu">
-                                                <li><a routerLink="" routerLinkActive="active">CES Home</a>
+                                                <li><a href="http://www.cesociety.in/#/home/main" target="_blank">CES
+                                                        Home</a>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li>
+                                        <li class="menu-item">
                                             <a routerLink="/basic/about" routerLinkActive="active">About Us</a>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="#">Gallery/Media</a>
+                                            <a>Gallery/Media</a>
+
                                             <ul class="sub-menu">
-                                                <li><a routerLink="/gallery/photos" routerLinkActive="active">Photos</a> </li>
-                                                <li><a href="#">Videos</a> </li>
+                                                <li><a routerLink="/gallery/photos" routerLinkActive="active">Photos</a>
+                                                </li>
+                                                <li><a routerLink="/more/magazine" routerLinkActive="active">Our
+                                                        Magazine Balmitra</a> </li>
                                             </ul>
                                         </li>
-                                        
+
+                                        <li class="menu-item">
+                                            <a routerLink="/basic/infrastructure"
+                                                routerLinkActive="active">Infrastructure</a>
+                                        </li>
                                         <li class="menu-item-has-children">
-                                            <a href="">Course</a>
+                                            <a>Department</a>
                                             <ul class="sub-menu">
-                                                <li><a  >Syllabus</a> </li>
-                                                <li><a href="http://www.cesociety.in/mbpatelscience/images/news/Program_Outcomes.pdf"
-                                                        target="_blank">Course Outcomes</a> </li>
+                                                <li><a routerLink="/department/staff" routerLinkActive="active">Staff
+                                                        Details</a> </li>
+                                                <li><a routerLink="/department/student"
+                                                        routerLinkActive="active">Student Details</a> </li>
                                             </ul>
                                         </li>
+                                    
                                         <li class="">
-                                            <a routerLink="/basic/contact" routerLinkActive="active">Contact
-                                                Us</a>
+                                            <a routerLink="/basic/contact" routerLinkActive="active">Contact Us</a>
                                         </li>
                                         <li class="menu-item-has-children">
                                             <a routerLink="" routerLinkActive="active">More</a>
                                             <ul class="sub-menu">
-                                                <li><a routerLink="" routerLinkActive="active">Results</a> </li>
+                                                <!-- <li><a routerLink="" routerLinkActive="active">Department</a> </li> -->
+                                                <li><a routerLink="/more/result" routerLinkActive="active">Results</a>
+                                                </li>
                                                 <li>
-                                                    <a href="http://www.cesociety.in/mbpatelscience/images/Forms/MB%20Science%20College%20Prospectus%202018%20-%202019-min.pdf"
-                                                        target="_blank">Prospectus</a>
+                                                    <a routerLink="/more/news" routerLinkActive="active">News</a>
+                                                </li>
+                                                <li>
+                                                    <a routerLink="/basic/committee"
+                                                        routerLinkActive="active">Committee</a>
                                                 </li>
                                                 <li class="menu-item-has-children">
-                                                    <a href="#">NAAC</a>
-
-                                                    <ul class="sub-menu" style="width: 280%;">
-                                                        <div class="row">
-                                                            <div class="col-md-3">
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/AISHE_CERTEFICATE.pdf"
-                                                                        target="_blank">AISHE</a> </li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2(f)12(b).pdf"
-                                                                        target="_blank">2(f)12(b)</a> </li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/AFFILIATION_CERTIFICATE.pdf"
-                                                                        target="_blank">Affiliation Certificates</a>
-                                                                </li>
-                                                                <li><a href="#">Reports</a>
-                                                                    <ul class="sub-menu">
-                                                                        <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/SSR_MBP.pdf"
-                                                                                target="_blank">SSR</a></li>
-                                                                        <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/RAR_MBP.pdf"
-                                                                                target="_blank">RAR</a></li>
-                                                                    </ul>
-                                                                </li>
-                                                                <li><a >IQAC and AQAR Reports</a>
-                                                                </li>
-                                                                <li><a  >NAAC Certificates</a>
-                                                                </li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/CPE_KEY_DOCUMENTS.pdf"
-                                                                        target="_blank">CPE Key documents</a> </li>
-
-                                                            </div>
-                                                            <div class="col-md-1"></div>
-                                                            <div class="col-md-3">
-                                                                <li><a href="#">Annual Reports</a>
-                                                                    <ul class="sub-menu">
-                                                                        <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Annual%20Report%202018-19.pdf"
-                                                                                target="_blank">2018-19</a></li>
-                                                                        <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Final_%20Annual%20Report_2017-2018.pdf"
-                                                                                target="_blank">2017-18</a></li>
-                                                                        <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Annual%20Report%20-%202016-17.pdf"
-                                                                                target="_blank">2016-17</a></li>
-                                                                        <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Annual_Repo_15_16.pdf"
-                                                                                target="_blank">2015-16</a></li>
-                                                                        <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Annual_Repo_14_15.pdf"
-                                                                                target="_blank">2014-15</a></li>
-                                                                        <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Annual_Repo_13_14.pdf"
-                                                                                target="_blank">2013-14</a></li>
-                                                                    </ul>
-                                                                </li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/MOUs%20Documents.pdf"
-                                                                        target="_blank">MOUs</a> </li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Board_of_studies.pdf"
-                                                                        target="_blank">Board of Studies</a>
-                                                                </li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/College_Committee_list_2018.pdf"
-                                                                        target="_blank">College Committee Lists</a>
-                                                                </li>
-                                                                <li><a  >Academic Calenders</a>
-                                                                </li>
-                                                                <li><a  >NAAC Criteria</a> </li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Feedback.pdf"
-                                                                        target="_blank">Sample Feedback</a> </li>
-                                                            </div>
-                                                            <div class="col-md-1"></div>
-                                                            <div class="col-md-3">
-
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Minutes_of_NAAC_Meeting.pdf"
-                                                                        target="_blank">Minutes of IQAC Meeting</a>
-                                                                </li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Sanction_Post_2014.pdf"
-                                                                        target="_blank">Sanction Post 2014</a> </li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/utilities.pdf"
-                                                                        target="_blank">Utility Services</a> </li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Alumni%20ASS%20Feedback_.pdf"
-                                                                        target="_blank">Alumni ASS Feedback</a> </li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Awards.pdf"
-                                                                        target="_blank">Awards</a> </li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Board%20of%20Studies.pdf"
-                                                                        target="_blank">Board of Studies</a> </li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/NAAC%20Accreditation.pdf"
-                                                                        target="_blank">NAAC Accreditation</a> </li>
-                                                            </div>
-                                                        </div>
-                                                    </ul>
-                                                </li>
-
-                                                <li class="menu-item-has-children">
-                                                    <a href="#">Student Info.</a>
+                                                    <a>Student Corner</a>
                                                     <ul class="sub-menu">
                                                         <li class="menu-item-has-children current-menu-item">
-                                                            <a href="#">Admission list</a>
-                                                            <ul class="sub-menu">
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2013_2014.pdf"
-                                                                        target="_blank">2013-14</a></li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2014_2015.pdf"
-                                                                        target="_blank">2014-15</a></li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2015_2016.pdf"
-                                                                        target="_blank">2015-16</a></li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2016_2017.pdf"
-                                                                        target="_blank">2016-17</a></li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2017_2018.pdf"
-                                                                        target="_blank">2017-18</a></li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2018_2019.pdf"
-                                                                        target="_blank">2018-19</a></li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/images/news/Year_2019-20.pdf"
-                                                                        target="_blank">2019-20</a></li>
-                                                            </ul>
+                                                            <a routerLink="/more/academic-calendar"
+                                                                routerLinkActive="active">Academic Calendar</a>
+                                                        </li>
+                                                        <li class="current-menu-item">
+                                                            <a (click)="openLinks('syllabus')">Syllabus</a>
                                                         </li>
                                                         <li class="menu-item-has-children current-menu-item">
-                                                            <a routerLink="/more/form"
-                                                                routerLinkActive="active">Student Detail Form</a>
+                                                            <a routerLink="/more/paper" routerLinkActive="active">Old
+                                                                Question Papers</a>
                                                         </li>
                                                         <li class="menu-item-has-children current-menu-item">
-                                                            <a href="http://www.cesociety.in/mbpatelscience/images/news/Exam%20Pattern.pdf"
-                                                                target="_blank">Exam Patterns</a>
-                                                        </li>
-                                                        <li class="menu-item-has-children current-menu-item">
-                                                            <a href="#">Student Enrollment</a>
-                                                            <ul class="sub-menu">
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/images/news/FYBSC%20ENROLLEMENT%20-2020-21.pdf"
-                                                                        target="_blank">2020-21</a></li>
-                                                                <li><a href="http://www.cesociety.in/mbpatelscience/images/news/FYBSC%20ENROLLEMENT-2019-20.pdf"
-                                                                        target="_blank">2019-20</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="menu-item-has-children current-menu-item">
-                                                            <a href="http://www.cesociety.in/mbpatelscience/images/news/Gold%20Medal.pdf"
-                                                                target="_blank">Achievements</a>
-                                                        </li>
-                                                        <li class="menu-item-has-children current-menu-item">
-                                                            <a  >Timetable Sem 1 to 6</a>
-                                                        </li>
-                                                        <li class="menu-item-has-children current-menu-item">
-                                                            <a href="http://www.cesociety.in/(S(vtswlubhzsfadhtt140d5u5t))/mbpatelscience/images/news/UG%20Adm%20Schedule%20Circular.pdf"
-                                                                target="_blank">F.Y.B.Sc. Admission Guideline 2021</a>
+                                                            <a routerLink="/more/scholarship"
+                                                                routerLinkActive="active">Scholarships for Students</a>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <a href="http://www.cesociety.in/mbpatelscience/images/news/IQAC%20Committee.pdf"
-                                                        target="_blank">IQAC Committee</a>
+                                                    <a (click)="openLinks('forms')">Form</a>
                                                 </li>
                                                 <li>
-                                                    <a href="http://www.cesociety.in/mbpatelscience/images/news/CWDC.pdf"
-                                                        target="_blank">CWDC Committee</a>
-                                                </li>
-                                                <li class="menu-item-has-children">
-                                                    <a routerLink="" routerLinkActive="active">RTI & Organogram</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="http://www.cesociety.in/mbpatelscience/images/news/RTI.pdf"
-                                                                target="_blank">RTI</a> </li>
-                                                        <li><a href="http://www.cesociety.in/mbpatelscience/images/news/NAAC_Organogram.pdf"
-                                                                target="_blank">NAAC Organogram</a> </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="http://www.cesociety.in/mbpatelscience/images/news/Anti_Ragging.pdf"
-                                                        target="_blank">Anti-Ragging</a>
-                                                </li>
-                                                <li>
-                                                    <a>Bank Details</a>
+                                                    <a (click)="openLinks('report')">Reports</a>
                                                 </li>
                                             </ul>
                                         </li>
-                                    </ul> <!-- //.nav-menu -->
+                                    </ul>
                                 </nav>
                             </div> <!-- //.main-menu -->
                         </div>
@@ -488,222 +352,104 @@
                     <!-- <img src="assets/images/CES_logo.png" alt=""> -->
                     <div class="row" style="background-color: #7d4d63 ; height: 50px;">
                         <div class="col-lg-2 text-end mt-10">
-                                <a routerLink="/home" routerLinkActive="active">
-                            <img src="assets/images/logo/2.png" alt="" width="45%">
-                        </a>
+                            <a routerLink="/home" routerLinkActive="active">
+                                <img src="assets/images/logo/2.png" alt="" width="45%">
+                            </a>
                         </div>
                         <div class="col-lg-10 text-start" style="margin-top: 5px;">
                             <div class="rs-menu-area jc">
                                 <div class="main-menu">
                                     <nav class="rs-menu">
                                         <ul class="nav-menu">
+
                                             <li class="menu-item-has-children">
                                                 <a routerLink="/home" routerLinkActive="active">Home</a>
                                                 <ul class="sub-menu">
-                                                    <li><a routerLink="" routerLinkActive="active">CES Home</a>
+                                                    <li><a href="http://www.cesociety.in/#/home/main"
+                                                            target="_blank">CES Home</a>
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li>        
-                                                <a routerLink="/basic/about" routerLinkActive="active">About
-                                                    Us</a>
+                                            <li class="menu-item">
+                                                <a routerLink="/basic/about" routerLinkActive="active">About Us</a>
+                                             
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a>Gallery/Media</a>
+
+                                                <ul class="sub-menu">
+                                                    <li><a routerLink="/gallery/photos"
+                                                            routerLinkActive="active">Photos</a> </li>
+                                                    <li><a routerLink="/more/magazine" routerLinkActive="active">Our
+                                                            Magazine Balmitra</a> </li>
+                                                </ul>
                                             </li>
 
-                                            <li class="menu-item-has-children">
-                                                <a href="#">Gallery/Media</a>
-                                                <ul class="sub-menu">
-                                                    <li><a routerLink="/gallery/photos" routerLinkActive="active">Photos</a> </li>
-                                                    <li><a href="#">Videos</a> </li>
-                                                </ul>
+                                            <li class="menu-item">
+                                                <a routerLink="/basic/infrastructure"
+                                                    routerLinkActive="active">Infrastructure</a>
                                             </li>
                                             <li class="menu-item-has-children">
-                                                <a href="">Course</a>
+                                                <a>Department</a>
                                                 <ul class="sub-menu">
-                                                    <li><a  >Syllabus</a> </li>
-                                                    <li><a href="http://www.cesociety.in/mbpatelscience/images/news/Program_Outcomes.pdf"
-                                                            target="_blank">Course Outcomes</a> </li>
+                                                    <li><a routerLink="/department/staff"
+                                                            routerLinkActive="active">Staff Details</a> </li>
+                                                    <li><a routerLink="/department/student"
+                                                            routerLinkActive="active">Student Details</a> </li>
                                                 </ul>
                                             </li>
+                                            
                                             <li class="">
-                                                <a routerLink="/basic/contact" routerLinkActive="active">Contact
-                                                    Us</a>
+                                                <a routerLink="/basic/contact" routerLinkActive="active">Contact Us</a>
                                             </li>
                                             <li class="menu-item-has-children">
                                                 <a routerLink="" routerLinkActive="active">More</a>
                                                 <ul class="sub-menu">
-                                                    <li><a routerLink="" routerLinkActive="active">Results</a> </li>
+                                                    <!-- <li><a routerLink="" routerLinkActive="active">Department</a> </li> -->
+                                                    <li><a routerLink="/more/result"
+                                                            routerLinkActive="active">Results</a>
+                                                    </li>
+                                                    <li><a routerLink="/more/news" routerLinkActive="active">News</a>
+                                                    </li>
                                                     <li>
-                                                        <a href="http://www.cesociety.in/mbpatelscience/images/Forms/MB%20Science%20College%20Prospectus%202018%20-%202019-min.pdf"
-                                                            target="_blank">Prospectus</a>
+                                                        <a routerLink="/basic/committee"
+                                                            routerLinkActive="active">Committee</a>
                                                     </li>
                                                     <li class="menu-item-has-children">
-                                                        <a href="#">NAAC</a>
-
-                                                        <ul class="sub-menu" style="width: 280%;">
-                                                            <div class="row">
-                                                                <div class="col-md-3">
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/AISHE_CERTEFICATE.pdf"
-                                                                            target="_blank">AISHE</a> </li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2(f)12(b).pdf"
-                                                                            target="_blank">2(f)12(b)</a> </li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/AFFILIATION_CERTIFICATE.pdf"
-                                                                            target="_blank">Affiliation Certificates</a>
-                                                                    </li>
-                                                                    <li><a href="#">Reports</a>
-                                                                        <ul class="sub-menu">
-                                                                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/SSR_MBP.pdf"
-                                                                                    target="_blank">SSR</a></li>
-                                                                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/RAR_MBP.pdf"
-                                                                                    target="_blank">RAR</a></li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li><a >IQAC and AQAR
-                                                                            Reports</a>
-                                                                    </li>
-                                                                    <li><a  >NAAC Certificates</a>
-                                                                    </li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/CPE_KEY_DOCUMENTS.pdf"
-                                                                            target="_blank">CPE Key documents</a> </li>
-
-                                                                </div>
-                                                                <div class="col-md-1"></div>
-                                                                <div class="col-md-3">
-                                                                    <li><a href="#">Annual Reports</a>
-                                                                        <ul class="sub-menu">
-                                                                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Annual%20Report%202018-19.pdf"
-                                                                                    target="_blank">2018-19</a></li>
-                                                                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Final_%20Annual%20Report_2017-2018.pdf"
-                                                                                    target="_blank">2017-18</a></li>
-                                                                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Annual%20Report%20-%202016-17.pdf"
-                                                                                    target="_blank">2016-17</a></li>
-                                                                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Annual_Repo_15_16.pdf"
-                                                                                    target="_blank">2015-16</a></li>
-                                                                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Annual_Repo_14_15.pdf"
-                                                                                    target="_blank">2014-15</a></li>
-                                                                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Annual_Repo_13_14.pdf"
-                                                                                    target="_blank">2013-14</a></li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/MOUs%20Documents.pdf"
-                                                                            target="_blank">MOUs</a> </li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Board_of_studies.pdf"
-                                                                            target="_blank">Board of Studies</a>
-                                                                    </li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/College_Committee_list_2018.pdf"
-                                                                            target="_blank">College Committee Lists</a>
-                                                                    </li>
-                                                                    <li><a  >Academic Calenders</a>
-                                                                    </li>
-                                                                    <li><a  >NAAC Criteria</a>
-                                                                    </li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Feedback.pdf"
-                                                                            target="_blank">Sample Feedback</a> </li>
-                                                                </div>
-                                                                <div class="col-md-1"></div>
-                                                                <div class="col-md-3">
-
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Minutes_of_NAAC_Meeting.pdf"
-                                                                            target="_blank">Minutes of IQAC Meeting</a>
-                                                                    </li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Sanction_Post_2014.pdf"
-                                                                            target="_blank">Sanction Post 2014</a> </li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/utilities.pdf"
-                                                                            target="_blank">Utility Services</a> </li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Alumni%20ASS%20Feedback_.pdf"
-                                                                            target="_blank">Alumni ASS Feedback</a>
-                                                                    </li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Awards.pdf"
-                                                                            target="_blank">Awards</a> </li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Board%20of%20Studies.pdf"
-                                                                            target="_blank">Board of Studies</a> </li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/NAAC%20Accreditation.pdf"
-                                                                            target="_blank">NAAC Accreditation</a> </li>
-                                                                </div>
-                                                            </div>
-                                                        </ul>
-                                                    </li>
-
-                                                    <li class="menu-item-has-children">
-                                                        <a href="#">Student Info.</a>
+                                                        <a>Student Corner</a>
                                                         <ul class="sub-menu">
                                                             <li class="menu-item-has-children current-menu-item">
-                                                                <a href="#">Admission list</a>
-                                                                <ul class="sub-menu">
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2013_2014.pdf"
-                                                                            target="_blank">2013-14</a></li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2014_2015.pdf"
-                                                                            target="_blank">2014-15</a></li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2015_2016.pdf"
-                                                                            target="_blank">2015-16</a></li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2016_2017.pdf"
-                                                                            target="_blank">2016-17</a></li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2017_2018.pdf"
-                                                                            target="_blank">2017-18</a></li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2018_2019.pdf"
-                                                                            target="_blank">2018-19</a></li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/images/news/Year_2019-20.pdf"
-                                                                            target="_blank">2019-20</a></li>
-                                                                </ul>
+                                                                <a routerLink="/more/academic-calendar"
+                                                                    routerLinkActive="active">Academic Calendar</a>
+                                                            </li>
+                                                            <li class="current-menu-item">
+                                                                <a (click)="openLinks('syllabus')">Syllabus</a>
                                                             </li>
                                                             <li class="menu-item-has-children current-menu-item">
-                                                                <a routerLink="/more/form"
-                                                                    routerLinkActive="active">Student Detail Form</a>
+                                                                <a routerLink="/more/paper"
+                                                                    routerLinkActive="active">Old
+                                                                    Question Papers</a>
                                                             </li>
                                                             <li class="menu-item-has-children current-menu-item">
-                                                                <a href="http://www.cesociety.in/mbpatelscience/images/news/Exam%20Pattern.pdf"
-                                                                    target="_blank">Exam Patterns</a>
-                                                            </li>
-                                                            <li class="menu-item-has-children current-menu-item">
-                                                                <a href="#">Student Enrollment</a>
-                                                                <ul class="sub-menu">
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/images/news/FYBSC%20ENROLLEMENT%20-2020-21.pdf"
-                                                                            target="_blank">2020-21</a></li>
-                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/images/news/FYBSC%20ENROLLEMENT-2019-20.pdf"
-                                                                            target="_blank">2019-20</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li class="menu-item-has-children current-menu-item">
-                                                                <a href="http://www.cesociety.in/mbpatelscience/images/news/Gold%20Medal.pdf"
-                                                                    target="_blank">Achievements</a>
-                                                            </li>
-                                                            <li class="menu-item-has-children current-menu-item">
-                                                                <a  >Timetable Sem 1 to 6</a>
-                                                            </li>
-                                                            <li class="menu-item-has-children current-menu-item">
-                                                                <a href="http://www.cesociety.in/(S(vtswlubhzsfadhtt140d5u5t))/mbpatelscience/images/news/UG%20Adm%20Schedule%20Circular.pdf"
-                                                                    target="_blank">F.Y.B.Sc. Admission Guideline
-                                                                    2021</a>
+                                                                <a routerLink="/more/scholarship"
+                                                                    routerLinkActive="active">Scholarships for
+                                                                    Students</a>
                                                             </li>
                                                         </ul>
                                                     </li>
                                                     <li>
-                                                        <a href="http://www.cesociety.in/mbpatelscience/images/news/IQAC%20Committee.pdf"
-                                                            target="_blank">IQAC Committee</a>
+                                                        <a (click)="openLinks('forms')">Form</a>
                                                     </li>
                                                     <li>
-                                                        <a href="http://www.cesociety.in/mbpatelscience/images/news/CWDC.pdf"
-                                                            target="_blank">CWDC Committee</a>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                        <a routerLink="" routerLinkActive="active">RTI & Organogram</a>
-                                                        <ul class="sub-menu">
-                                                            <li><a href="http://www.cesociety.in/mbpatelscience/images/news/RTI.pdf"
-                                                                    target="_blank">RTI</a> </li>
-                                                            <li><a href="http://www.cesociety.in/mbpatelscience/images/news/NAAC_Organogram.pdf"
-                                                                    target="_blank">NAAC Organogram</a> </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <a href="http://www.cesociety.in/mbpatelscience/images/news/Anti_Ragging.pdf"
-                                                            target="_blank">Anti-Ragging</a>
-                                                    </li>
-                                                    <li>
-                                                        <a>Bank Details</a>
+                                                        <a (click)="openLinks('report')">Reports</a>
+
+                                                        <a>Annual Reports</a>
+
                                                     </li>
                                                 </ul>
                                             </li>
-                                        </ul> <!-- //.nav-menu -->
-                                    </nav>
+                                        </ul>
+                                        < </nav>
                                 </div> <!-- //.main-menu -->
                             </div>
                         </div>
@@ -713,68 +459,66 @@
 
             <!-- stickymenu -->
         </div>
-   
-<!-- stickymenu -->
-<ng-template #content let-c="close" let-d="dismiss">
-        <div class="modal-header">
-            <div class="icon-part" style="margin: 10px 20px 10px 20px !important;">
-                <img src="assets/images/cake.png" alt="">
+
+        <!-- stickymenu -->
+        <ng-template #content let-c="close" let-d="dismiss">
+            <div class="modal-header">
+                <div class="icon-part" style="margin: 10px 20px 10px 20px !important;">
+                    <img src="assets/images/cake.png" alt="">
+                </div>
+                <h4 class="modal-title" id="modal-basic-title" style="text-align: center;">Wish List of the Day !
+                </h4>
+                <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
             </div>
-            <h4 class="modal-title" id="modal-basic-title" style="text-align: center;">Wish List of the Day !
-            </h4>
-            <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
-        </div>
-        <div class="modal-body">
-            <div classs="row">
-                <p style="text-align: center; color: #ffcc00;" *ngIf="staffDataTable.length==0"><strong>
-                        There are no wishes to be made today!
-                    </strong></p>
-            </div>
+            <div class="modal-body">
+                <div classs="row">
+                    <p style="text-align: center; color: #ffcc00;" *ngIf="staffDataTable.length==0"><strong>
+                            There are no wishes to be made today!
+                        </strong></p>
+                </div>
 
 
-            <div class="row" *ngFor="let s of staffDataTable;let i=index">
-                <div class="col-1">
-                    <p style="text-align: center;"><strong>{{i+1}}</strong></p>
+                <div class="row" *ngFor="let s of staffDataTable;let i=index">
+                    <div class="col-1">
+                        <p style="text-align: center;"><strong>{{i+1}}</strong></p>
+                    </div>
+                    <div class="col-2">
+                        <img src="http://localhost:9000{{s.profile_image}}" class="img-thumbnail" alt="wedrfgthyuj" />
+                    </div>
+                    <div class="col-5">
+                        <p>
+                            <strong>
+                                {{s.name}} <br>
+                                {{s.instituteName}},<br>
+                                {{s.departmentName}},<br>
+                                {{s.designation}},<br>
+                            </strong>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <ul class="address-widget">
+                            <li class="mt-3">
+                                <div class="desc">
+                                    <i class="flaticon-call" style="color: black;"></i> <a
+                                        href="tel:{{s.contact}}">{{s.contact}}</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="desc">
+                                    <i class="flaticon-email" style="color: black;"></i> <a href="mailto:{{s.email}}">
+                                        {{s.email}}</a> <br>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr *ngIf="staffDataTable.length>1">
                 </div>
-                <div class="col-2">
-                    <img src="http://localhost:9000{{s.profile_image}}" class="img-thumbnail"
-                        alt="wedrfgthyuj" />
-                </div>
-                <div class="col-5">
-                    <p>
-                        <strong>
-                            {{s.name}} <br>
-                            {{s.instituteName}},<br>
-                            {{s.departmentName}},<br>
-                            {{s.designation}},<br>
-                        </strong>
-                    </p>
-                </div>
-                <div class="col-4">
-                    <ul class="address-widget">
-                        <li class="mt-3">
-                            <div class="desc">
-                                <i class="flaticon-call" style="color: black;"></i> <a
-                                    href="tel:{{s.contact}}">{{s.contact}}</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="desc">
-                                <i class="flaticon-email" style="color: black;"></i> <a
-                                    href="mailto:{{s.email}}">
-                                    {{s.email}}</a> <br>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <hr *ngIf="staffDataTable.length>1">
             </div>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">
-                <i class="fa fa-times" aria-hidden="true"></i> Close</button>
-        </div>
-    </ng-template>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">
+                    <i class="fa fa-times" aria-hidden="true"></i> Close</button>
+            </div>
+        </ng-template>
     </header>
 
 </div>
