@@ -31,12 +31,12 @@
                     <img src="http://localhost:9000{{s.profile_image}}" alt="">
                     <div class="content-part">
                         <h4 class="name textCustom" style="color: white !important;">{{s.name}}</h4>
-                        <span class="textCustom">{{s.designation}}</span>
-                        <ul class="textCustom">
+                        <span class="textCustom" style="color: white !important;">{{s.designation}}</span>
+                        <ul class="textCustom" style="color: white !important;">
                             <li>{{s.qualification}}</li>
-                            <li><a class="textCustom" href="mailto:{{s.email}}">{{s.email}}</a>
+                            <li><a class="textCustom" style="color: white !important;" href="mailto:{{s.email}}">{{s.email}}</a>
                             </li>
-                            <li>Birthday : {{s.birthday_date|date}}</li>
+                            <li >Birthday : {{s.birthday_date|date}}</li>
                         </ul>
                     </div>
                 </div>

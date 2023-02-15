@@ -30,7 +30,7 @@
                             </div>
                             <div class="address-text">
                                 <span class="label">Address</span>
-                                <span class="des">Charotar Education Society, Near Sardar Gunj, Anand, Gujarat 388001</span>
+                                <span class="des">Vithal Udyognagar, GIDC, Vitthal Udyognagar INA, Gujarat 388345</span>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                             </div>
                             <div class="address-text">
                                 <span class="label">Email Address</span>
-                                <span class="des"><a href="mailto:mbpatel@cesociety.in">mbpatel@cesociety.in</a></span> <br>
+                                <span class="des"><a href="mailto:mbpas@outlook.com">mbpas@outlook.com</a></span> <br>
                                 <!-- <span class="des"><a href="mailto:dnhs@cesociety.in">dnhs@cesociety.in</a></span> -->
                             </div>
                         </div>
@@ -53,8 +53,7 @@
                             </div>
                             <div class="address-text">
                                 <span class="label">Phone Number</span>
-                                <span class="des"><a href="tel:(02692) 243102">(02692) 243102</a></span> <br>
-                                <span class="des"><a href="tel:(02692) 244415">(02692) 244415</a></span>
+                                <span class="des"><a href="tel: (02692) 233000"> (02692) 233000</a></span> <br>
                             </div>
                         </div>
                     </div>
@@ -63,10 +62,11 @@
                     <div class="col-lg-6 md-mb-30">
                         <!-- Map Section Start --> 
                         <div class="contact-map3">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7369.406682704147!2d72.962527!3d22.552783!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x61836e18abe42155!2sM.B.%20Patel%20Science%20College!5e0!3m2!1sen!2sin!4v1661247446443!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.145517535114!2d72.93179641423008!3d22.536221039986078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4dc560901ead%3A0x8137b9a5ae267ca6!2sM.B.Patel%20Applied%20Science%20College%2C%20Mogri!5e0!3m2!1sen!2sin!4v1676440601685!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-                    <div class="col-lg-6 pl-60 md-pl-15">
+
+                    <!-- <div class="col-lg-6 pl-60 md-pl-15">
                         <div class="contact-comment-box">
                             <div class="inner-part">
                                 <h2 class="title mb-mb-15">Get In Touch</h2>
@@ -96,6 +96,89 @@
                                     <div class="form-group mb-0">
                                         <input class="btn-send" type="submit" value="Submit Now">
                                     </div>										   
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-6 pl-60 md-pl-15">
+                        <div class="contact-comment-box">
+                            <div class="inner-part">
+                                <h2 class="title mb-mb-15">Get In Touch</h2>
+                                <p>We welcome your inputs and suggestions to constantly improve upon the functioning of
+                                    the institute. </p>
+                            </div>
+                            <div id="form-messages"></div>
+                            <form id="contact-form" [formGroup]="form" (ngSubmit)="saveContactUSData()">
+                                <fieldset>
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
+                                            <input class="from-control" type="text" id="name" name="name"
+                                                placeholder="Name" formControlName="name"
+                                                [ngClass]="{ 'is-invalid': submitted && f['name'].errors }"
+                                                [(ngModel)]="contactModel.name">
+                                            <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">
+                                                <div *ngIf="f['name'].errors['required']">
+                                                    Name
+                                                    is
+                                                    required
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
+                                            <input class="from-control" type="text" id="email" name="email"
+                                                placeholder="Email" formControlName="email"
+                                                [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+                                                [(ngModel)]="contactModel.email">
+                                            <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                                                <div *ngIf="f['email'].errors['required']">Email is required</div>
+                                                <div *ngIf="f['email'].errors['email']">Email is invalid</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
+                                            <input class="from-control" type="number" id="conatct" name="conatct"
+                                                placeholder="conatct" formControlName="contact"
+                                                [ngClass]="{ 'is-invalid': submitted && f['contact'].errors }"
+                                                [(ngModel)]="contactModel.contact">
+                                            <div *ngIf="submitted && f['contact'].errors" class="invalid-feedback">
+                                                <div *ngIf="f['contact'].errors['required']">
+                                                    Contact Number
+                                                    is
+                                                    required
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
+                                            <input class="from-control" type="text" id="subject" name="subject"
+                                                placeholder="Subject" formControlName="subject"
+                                                [ngClass]="{ 'is-invalid': submitted && f['subject'].errors }"
+                                                [(ngModel)]="contactModel.subject">
+
+                                            <div *ngIf="submitted && f['subject'].errors" class="invalid-feedback">
+                                                <div *ngIf="f['subject'].errors['required']">
+                                                    Subject
+                                                    is
+                                                    required
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12 mb-50">
+                                            <textarea class="from-control" id="message" name="message"
+                                                placeholder=" Message" formControlName="message"
+                                                [ngClass]="{ 'is-invalid': submitted && f['message'].errors }"
+                                                [(ngModel)]="contactModel.message"></textarea>
+                                            <div *ngIf="submitted && f['message'].errors" class="invalid-feedback">
+                                                <div *ngIf="f['message'].errors['required']">
+                                                    Message
+                                                    is
+                                                    required
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-0">
+                                        <input class="btn-send" type="submit">
+                                    </div>
                                 </fieldset>
                             </form>
                         </div>
