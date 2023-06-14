@@ -22,10 +22,6 @@ export const MoreRoutes: Routes = [{
             component: PaperComponent
         },
         {
-            path: 'syllabus',
-            component: SyllabusComponent
-        },
-        {
             path: 'result',
             component: ResultComponent
         },
@@ -52,10 +48,6 @@ export const MoreRoutes: Routes = [{
         {
             path:'news',
             component:NewsComponent
-        },
-        {
-            path:'search',
-            component:SearchComponent
         },
         {
             path: 'links/:id',
