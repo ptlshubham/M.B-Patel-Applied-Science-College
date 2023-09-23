@@ -7,13 +7,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./left-image-text.component.css']
 })
 export class LeftImageTextComponent implements OnInit {
-  public homedata: string = 'was established in 1967 , and has total Campus area of 28852.38 Sq. mtrs. and the total built- up area is 7542.74 Sq.mtr. Started with subjects Physics, Chemistry, Maths, Biology. It is affiliated to Sardar Patel University , Vallabh Vidyanagar.The college is recognized under section 2(f) and 12 B of the UGC Act 1956. The College is Reaccredited by NAAC with a CGPA of 3.02 at ‘A’ Grade in October 2013. The College is Accredited by KCG for ‘AAA’ with a 3.11 CGPA at A-Grade in January 2015.'
+  public homedata: string = 'To be an institution where the most formative years of a young mind are spent in the guided pursuit of excellence while developing a spirit of inquisitive questioning, an ability to excel in the pressure of a fast changing professional world, and a desire to grow into a personality than a person, in an environment that fosters strong moral and ethical values, teamwork, community service and environment consciousness.'
   public aboutdata: string = 'The College was awarded “College with Potential for Excellence” status by University Grants Commission, New Delhi in 2011and received a grant of One Crore under this Scheme. The College is selected “College with Potential for Excellence” by University Grants Commission, New Delhi for the Second phase of five year from 1st April 2017 to 31st March 2022 and is sanctioned grant of Rs. One Crore Thirty Lacks under this Scheme.' ;
   public textdata: string = '';
   public abouttitle: string = 'History';
   public title: string = '';
   public subtitle: string = '';
-  public asubtitle: string = 'M.B.Patel Applied Science College';
+  public asubtitle: string = 'M.B.Patel Applied Science College (Mogri)';
   public dimg: string = 'assets/images/about/1.jpg';
   himg: string = 'assets/images/about/22.jpg';
   daimg: string = '';
